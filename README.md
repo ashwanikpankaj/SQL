@@ -52,7 +52,9 @@ This are used to define the rules for data in the table => for accuracy and reli
 
 CREATE_TABLE table_name (
 column1 datatype constraint,
+
 column2 datatype constraint,
+
 column3 datatype
 )
 
@@ -85,10 +87,15 @@ CREATE DATABASE database name => is used to create the database
 This is for creating the table
 
 CREATE TABLE customer (
+
 "ID" int8 PRIMARY KEY,
+
 "NAME" varchar(50) NOT NULL,
+
 "AGE" int NOT NULL,
+
 "CITY" char(50),
+
 "Salary" numeric
 )
 
@@ -108,25 +115,33 @@ VALUES
 
 INSERT INTO customer
 (ID,NAME,AGE,CITY,Salary)
+
 VALUES
+
 (1,"Ashwani", 30,"Bihar",80000),
+
 (2,"Naveen", 30,"Bihar",1000000)
 
 ## Update values => Update command is used to update the existing value in table
 # Syntax
 UPDATE TABLE_NAME
+
 SET "Column_name1" = "value1" "Column_name2" ="value2"
+
 WHERE id="value"
 
 
 UPDATE customer
+
 SET NAME ="Sunil" AGE =32
+
 WHER ID = 1;
 
 
 # Delete the values from Table
 
 DELETE FROM customer
+
 WHERE id =1;
 
 
@@ -137,16 +152,19 @@ WHERE id =1;
 i) ALTER TABLE add column syntax
 
 ALTER TABLE table_name
+
 ADD COLUMN table_name;
 
 ii) Drop column syntax
 
 ALTER TABLE table_name
+
 DROP COLUMN column_name;
 
 iii) Modify column syntax
 
 ALTER TABLE table_name
+
 ALTER column column_name datatype;
 
 
