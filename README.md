@@ -168,6 +168,17 @@ ALTER TABLE table_name
 ALTER column column_name datatype;
 
 
+## Drop Table => for deleting the table
+
+DROP TABLE table_name
+
+## Truncate table => delete the data inside the table but not the table itselg
+
+TRUNCATE TABLE table_name
+
+
+
+
 
 
 
