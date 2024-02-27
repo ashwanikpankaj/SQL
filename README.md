@@ -121,12 +121,33 @@ WHERE id="value"
 
 UPDATE customer
 SET NAME ="Sunil" AGE =32
-WHER ID = 1
+WHER ID = 1;
 
 
+# Delete the values from Table
+
+DELETE FROM customer
+WHERE id =1;
 
 
+# ALTER TABLE => used to add , delete , or modify the table
 
+## Syntax
+
+i) ALTER TABLE add column syntax
+
+ALTER TABLE table_name
+ADD COLUMN table_name;
+
+ii) Drop column syntax
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+iii) Modify column syntax
+
+ALTER TABLE table_name
+ALTER column column_name datatype;
 
 
 
