@@ -86,6 +86,8 @@ CREATE DATABASE database name => is used to create the database
 
 This is for creating the table
 
+Example
+
 CREATE TABLE customer (
 
 "ID" int8 PRIMARY KEY,
@@ -113,6 +115,9 @@ INSERT INTO TABLE_NAME
 VALUES
 (value1 , value2, ...)
 
+Example
+
+
 INSERT INTO customer
 (ID,NAME,AGE,CITY,Salary)
 
@@ -130,6 +135,7 @@ SET "Column_name1" = "value1" "Column_name2" ="value2"
 
 WHERE id="value"
 
+Example
 
 UPDATE customer
 
@@ -175,6 +181,24 @@ DROP TABLE table_name
 ## Truncate table => delete the data inside the table but not the table itselg
 
 TRUNCATE TABLE table_name
+
+## SELECT
+
+This is used to select the data from the table
+
+### Syntax
+
+SELECT column_name FROM table_name
+
+To select all the fields from the table
+
+SELECT * FROM table_name
+
+To select unique and dinstinct fields present in the table
+
+SELECT DISTINCT column_name FROM table_name
+
+
 
 
 
