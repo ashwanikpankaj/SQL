@@ -306,10 +306,10 @@ GROUP BY mode  (here select cloumn_name and group by column_name should be same)
 
 
 
- mode |payment|
+ # mode | # payment
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
- MobilePaymen |120|
- Debit Card   |200|
+ MobilePayment | 120
+ Debit Card    | 200
 
 
 
