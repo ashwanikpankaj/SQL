@@ -305,11 +305,11 @@ SELECT mode,SUM(amount) AS total FROM payment   => AS will determine the column 
 GROUP BY mode  (here select cloumn_name and group by column_name should be same)
 
 
+mode | total 
+--- | --- 
+MobilePayment | 301 
+Debit Card    | 201 
 
- # mode | # payment
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
- MobilePayment | 120
- Debit Card    | 200
 
 
 
