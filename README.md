@@ -187,6 +187,92 @@ Used to filter the records
 SELECT  column_name FROM table_name     
 WHERE conditions
 
+Example 
+
+SELECT name FROM classroom   
+WHERE grade = "A" (here grade is column name for now) only name column for that grade will be visible
+
+## Operators in SQL
+Used with the WHERE clause while doing any query
+
+i) Arithmatic operators  => +,-,/,%
+
+ii) Comparison operators  => =, !=, > , < , >=,<= etc
+
+iii) Logical operators => perform boolean logic   
+eg => ALL, BETWEEN, IN , LIKE, AND , OR, NOT , ANY
+
+iii) Bitwise operator => &(AND) , | (OR)
+
+Examples 
+
+SELECT name FROM classroom  
+WHERE grade ="A" AND rollno > 3
+
+## LIMIT  CLAUSE 
+This is used to set set an upper limit on number of tuples returned by the SQL
+
+Example => Below code will return the 5 rows of data  
+SELECT column_name FROM table_name  
+LIMTI 5;  
+
+
+## ORDER BY clause 
+Set the data in ascending order or descending order  
+
+Example   
+SELECT column_name FROM table_name
+ORDER BY column_name ASC; (for Descending oreder => DESC)
+
+
+
+
+## Functions in SQL 
+
+i) Built in functions =>  rand(),round(),uppper(),lower(),
+
+ii) User defined functions => Custom functions
+
+MOST used strings functions  => that is perform on the strings  
+
+i) UPPER => converts the value of field to upper case  
+
+ii ) LOWER => converts the value of field to lower case  
+
+iii) LENGTH => return the length of the value in text field   
+
+iv)  SUBSTRING => extract the subsring  from the string   
+
+v) NOW () => returns the current system date and time.   
+
+vi) FORMAT => used to set the format of the field   
+
+vii) CONCAT => add two or more string together   
+
+viii) REPLACE => replace all occurences of a substring in a string with the new substring   
+
+ix) TRIM => removes the leading and trailing spaces  
+
+Example
+
+SELECT UPPER(column_name) FROM table_name => it will convert the text of the column in upper case
+
+SELECT CONCAT(column_name1, column_name2) FROM table_name  => add the two string
+
+SELECT REPLACE(column_name , textTobeReplaced , replacingText)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
