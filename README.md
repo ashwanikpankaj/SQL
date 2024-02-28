@@ -188,7 +188,7 @@ This is used to select the data from the table
 
 ### Syntax
 
-SELECT column_name FROM table_name
+SELECT column_name1, column_name2 FROM table_name
 
 To select all the fields from the table
 
@@ -197,6 +197,19 @@ SELECT * FROM table_name
 To select unique and dinstinct fields present in the table
 
 SELECT DISTINCT column_name FROM table_name
+
+example for distinct will be like => if the grade column is present A,B,C,D,A,B then only cloumn of grade with A,B,C D will be visible => unique grades only
+
+## WHERE
+
+Used to filter the records
+
+### Syntax
+
+SELECT  column_name FROM table_name  
+WHERE conditions
+
+
 
 
 
