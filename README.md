@@ -50,12 +50,10 @@ This are used to define the rules for data in the table => for accuracy and reli
 
 ### Syntax
 
-CREATE_TABLE table_name (
-column1 datatype constraint,
-
-column2 datatype constraint,
-
-column3 datatype
+CREATE_TABLE table_name (  
+column1 datatype constraint,  
+column2 datatype constraint,   
+column3 datatype  
 )
 
 Commonly Used Constraints 
@@ -77,7 +75,7 @@ vii) CREATE INDEX: used to create and get that from the table quickly
 
 # Create a table 
  ## Syntax
-CREATE TABLE table_name (
+CREATE TABLE table_name (   
 column_name1 datatype constraints
 )
 
@@ -88,17 +86,12 @@ This is for creating the table
 
 Example
 
-CREATE TABLE customer (
-
-"ID" int8 PRIMARY KEY,
-
-"NAME" varchar(50) NOT NULL,
-
-"AGE" int NOT NULL,
-
-"CITY" char(50),
-
-"Salary" numeric
+CREATE TABLE customer (  
+"ID" int8 PRIMARY KEY,  
+"NAME" varchar(50) NOT NULL,   
+"AGE" int NOT NULL,  
+"CITY" char(50),   
+"Salary" numeric  
 )
 
 To get that table
@@ -110,45 +103,34 @@ SELECT * FROM customer (star is for all the value of the table)
 ### syntax
 
 INSERT INTO TABLE_NAME
-(column1,column2...)
-
-VALUES
+(column1,column2...)   
+VALUES   
 (value1 , value2, ...)
 
 Example
 
-
-INSERT INTO customer
-(ID,NAME,AGE,CITY,Salary)
-
-VALUES
-
-(1,"Ashwani", 30,"Bihar",80000),
-
-(2,"Naveen", 30,"Bihar",1000000)
+INSERT INTO customer  
+(ID,NAME,AGE,CITY,Salary)   
+VALUES   
+(1,"Ashwani", 30,"Bihar",80000),   
+(2,"Naveen", 30,"Bihar",1000000)  
 
 ## Update values => Update command is used to update the existing value in table
-# Syntax
-UPDATE TABLE_NAME
-
-SET "Column_name1" = "value1" "Column_name2" ="value2"
-
-WHERE id="value"
+# Syntax   
+UPDATE TABLE_NAME   
+SET "Column_name1" = "value1" "Column_name2" ="value2"   
+WHERE id="value"   
 
 Example
 
-UPDATE customer
-
-SET NAME ="Sunil" AGE =32
-
-WHER ID = 1;
-
+UPDATE customer   
+SET NAME ="Sunil" AGE =32  
+WHER ID = 1;  
 
 # Delete the values from Table
 
-DELETE FROM customer
-
-WHERE id =1;
+DELETE FROM customer   
+WHERE id =1;   
 
 
 # ALTER TABLE => used to add , delete , or modify the table
@@ -157,26 +139,22 @@ WHERE id =1;
 
 i) ALTER TABLE add column syntax
 
-ALTER TABLE table_name
-
+ALTER TABLE table_name  
 ADD COLUMN table_name;
 
-ii) Drop column syntax
+ii) Drop column syntax   
 
-ALTER TABLE table_name
+ALTER TABLE table_name    
+DROP COLUMN column_name;  
 
-DROP COLUMN column_name;
-
-iii) Modify column syntax
-
-ALTER TABLE table_name
-
+iii) Modify column syntax  
+ALTER TABLE table_name   
 ALTER column column_name datatype;
 
 
 ## Drop Table => for deleting the table
 
-DROP TABLE table_name
+DROP TABLE table_name   
 
 ## Truncate table => delete the data inside the table but not the table itselg
 
@@ -206,7 +184,7 @@ Used to filter the records
 
 ### Syntax
 
-SELECT  column_name FROM table_name  
+SELECT  column_name FROM table_name     
 WHERE conditions
 
 
