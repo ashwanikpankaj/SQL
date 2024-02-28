@@ -259,7 +259,68 @@ SELECT UPPER(column_name) FROM table_name => it will convert the text of the col
 
 SELECT CONCAT(column_name1, column_name2) FROM table_name  => add the two string
 
-SELECT REPLACE(column_name , textTobeReplaced , replacingText)
+SELECT REPLACE(column_name , textTobeReplaced , replacingText)   
+
+### AGGREGATE FUNCTION => perform calucations on multiple values and returns a single value
+
+Most used aggregate function
+
+Aggregate funtion is most used by GROUP BY or SELECT statement
+
+i) COUNT() => returns number of values => gives the total number of rows
+
+ii) SUM() => returns sum of all values
+
+iii) AVG() => returns avg value
+
+iv) MAX() => returns the maximum value
+
+v) MIN() =>  returns the min value
+
+vi) ROUNDS() => rounds a number to a specified number of decimal places
+
+
+Example
+
+a) SELECT COUNT(*) FROM table_name
+
+or  =>b) SELECT COUNT(column_name) FROM table_name => both a) and b) will give the same value no of rows
+
+ii) SELECT SUM(column_name) FROM column_name
+
+iii) SELECT ROUND(AVG(column_name),2) FROM table_name => here 2 is like after decimal 2 digits will be visible
+
+
+## GROUP BY => group rows that have same values into summary rows
+
+It is often used with Aggregate functions
+
+## Syntax  
+SELECT column_name(s) FROM table_name
+GROUP BY column_name(s)
+
+Example
+
+SELECT mode,SUM(amount) AS total FROM payment   => AS will determine the column name
+GROUP BY mode  (here select cloumn_name and group by column_name should be same)
+
+
+
+ mode |payment|
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+ MobilePaymen |120|
+ Debit Card   |200|
+
+
+
+
+
+
+
+
+
+
+
 
 
 
