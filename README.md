@@ -302,13 +302,14 @@ GROUP BY column_name(s)
 Example
 
 SELECT mode,SUM(amount) AS total FROM payment   => AS will determine the column name
-GROUP BY mode  (here select cloumn_name and group by column_name should be same)
+GROUP BY mode  (here select cloumn_name and group by column_name should be same)  
+ORDER BY total ASC
 
 
 mode | total 
 --- | --- 
-MobilePayment | 301 
-Debit Card    | 201 
+MobilePayment | 201 
+Debit Card    | 400
 
 
 
